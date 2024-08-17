@@ -1,0 +1,14 @@
+#include <iostream>
+#include <sstream>
+
+int main() {
+    std::string str = "64";
+    int hexValue;
+
+    std::stringstream ss;
+    ss << std::hex << str;  // Chuyển chuỗi thành giá trị thập lục phân
+    ss >> hexValue;         // Gán giá trị thập lục phân vào biến hexValue
+
+    std::cout << "Giá trị thập lục phân: 0x" << std::hex << hexValue << std::endl;
+    return 0;
+}
